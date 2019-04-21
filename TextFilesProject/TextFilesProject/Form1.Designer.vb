@@ -29,11 +29,12 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.txtDefinition = New System.Windows.Forms.TextBox()
         Me.txtNewLine = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(646, 749)
+        Me.btnAdd.Location = New System.Drawing.Point(642, 867)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(182, 103)
         Me.btnAdd.TabIndex = 0
@@ -42,7 +43,7 @@ Partial Class Form1
         '
         'btnRead
         '
-        Me.btnRead.Location = New System.Drawing.Point(550, 66)
+        Me.btnRead.Location = New System.Drawing.Point(523, 66)
         Me.btnRead.Name = "btnRead"
         Me.btnRead.Size = New System.Drawing.Size(391, 146)
         Me.btnRead.TabIndex = 1
@@ -69,30 +70,40 @@ Partial Class Form1
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(522, 457)
+        Me.TextBox1.Location = New System.Drawing.Point(491, 457)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(433, 31)
+        Me.TextBox1.Size = New System.Drawing.Size(464, 31)
         Me.TextBox1.TabIndex = 4
         '
         'txtDefinition
         '
-        Me.txtDefinition.Location = New System.Drawing.Point(866, 785)
+        Me.txtDefinition.Location = New System.Drawing.Point(777, 785)
         Me.txtDefinition.Name = "txtDefinition"
         Me.txtDefinition.Size = New System.Drawing.Size(279, 31)
         Me.txtDefinition.TabIndex = 5
         '
         'txtNewLine
         '
-        Me.txtNewLine.Location = New System.Drawing.Point(343, 785)
+        Me.txtNewLine.Location = New System.Drawing.Point(436, 785)
         Me.txtNewLine.Name = "txtNewLine"
         Me.txtNewLine.Size = New System.Drawing.Size(260, 31)
         Me.txtNewLine.TabIndex = 6
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(727, 791)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(24, 25)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "="
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1463, 1042)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtNewLine)
         Me.Controls.Add(Me.txtDefinition)
         Me.Controls.Add(Me.TextBox1)
@@ -114,4 +125,5 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents txtDefinition As TextBox
     Friend WithEvents txtNewLine As TextBox
+    Friend WithEvents Label1 As Label
 End Class
