@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class Acronyms
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -30,11 +30,15 @@ Partial Class Form1
         Me.txtDefinition = New System.Windows.Forms.TextBox()
         Me.txtNewLine = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(642, 867)
+        Me.btnAdd.Location = New System.Drawing.Point(605, 576)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(182, 103)
         Me.btnAdd.TabIndex = 0
@@ -43,11 +47,12 @@ Partial Class Form1
         '
         'btnRead
         '
+        Me.btnRead.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRead.Location = New System.Drawing.Point(523, 66)
         Me.btnRead.Name = "btnRead"
         Me.btnRead.Size = New System.Drawing.Size(391, 146)
         Me.btnRead.TabIndex = 1
-        Me.btnRead.Text = "Read"
+        Me.btnRead.Text = "Refresh"
         Me.btnRead.UseVisualStyleBackColor = True
         '
         'lstText
@@ -61,30 +66,32 @@ Partial Class Form1
         '
         'lstTranslation
         '
+        Me.lstTranslation.BackColor = System.Drawing.Color.White
+        Me.lstTranslation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lstTranslation.FormattingEnabled = True
         Me.lstTranslation.ItemHeight = 25
         Me.lstTranslation.Location = New System.Drawing.Point(12, 12)
         Me.lstTranslation.Name = "lstTranslation"
-        Me.lstTranslation.Size = New System.Drawing.Size(397, 729)
+        Me.lstTranslation.Size = New System.Drawing.Size(397, 727)
         Me.lstTranslation.TabIndex = 3
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(491, 457)
+        Me.TextBox1.Location = New System.Drawing.Point(495, 315)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(464, 31)
         Me.TextBox1.TabIndex = 4
         '
         'txtDefinition
         '
-        Me.txtDefinition.Location = New System.Drawing.Point(777, 785)
+        Me.txtDefinition.Location = New System.Drawing.Point(717, 468)
         Me.txtDefinition.Name = "txtDefinition"
         Me.txtDefinition.Size = New System.Drawing.Size(279, 31)
         Me.txtDefinition.TabIndex = 5
         '
         'txtNewLine
         '
-        Me.txtNewLine.Location = New System.Drawing.Point(436, 785)
+        Me.txtNewLine.Location = New System.Drawing.Point(415, 468)
         Me.txtNewLine.Name = "txtNewLine"
         Me.txtNewLine.Size = New System.Drawing.Size(260, 31)
         Me.txtNewLine.TabIndex = 6
@@ -92,17 +99,58 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(727, 791)
+        Me.Label1.Location = New System.Drawing.Point(687, 471)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(24, 25)
         Me.Label1.TabIndex = 7
         Me.Label1.Text = "="
         '
-        'Form1
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(501, 275)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(131, 25)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "Translation: "
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(656, 421)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(104, 25)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "Add New:"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(518, 520)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(96, 25)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "Acronym"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(819, 520)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(95, 25)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "Meaning"
+        '
+        'Acronyms
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1463, 1042)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txtNewLine)
         Me.Controls.Add(Me.txtDefinition)
@@ -111,7 +159,8 @@ Partial Class Form1
         Me.Controls.Add(Me.lstText)
         Me.Controls.Add(Me.btnRead)
         Me.Controls.Add(Me.btnAdd)
-        Me.Name = "Form1"
+        Me.Cursor = System.Windows.Forms.Cursors.Arrow
+        Me.Name = "Acronyms"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -126,4 +175,8 @@ Partial Class Form1
     Friend WithEvents txtDefinition As TextBox
     Friend WithEvents txtNewLine As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

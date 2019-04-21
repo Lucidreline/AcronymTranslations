@@ -233,5 +233,3 @@ YBS = You'll be sorry
 YGBKM = You gotta be kidding me  
 YMMV = Your mileage may vary  
 YW = You're welcome
-hi  = there
-TEST = run

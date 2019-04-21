@@ -1,10 +1,8 @@
-﻿Public Class Form1
+﻿Public Class Acronyms
 
     Private Sub btnRead_Click(sender As Object, e As EventArgs) Handles btnRead.Click
         LoadListBoxes()
     End Sub
-
-
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
 
@@ -15,7 +13,22 @@
         objWriter.Write(formatNewEntry)
         objWriter.Close()
         LoadListBoxes()
+        txtDefinition.Clear()
+        txtNewLine.Clear()
 
+    End Sub
+
+    Private Sub lstTranslation_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstTranslation.SelectedIndexChanged
+        Dim selectedIndex As Integer
+        selectedIndex = lstTranslation.SelectedIndex
+        TextBox1.Text = lstText.Items.Item(selectedIndex)
+
+    End Sub
+
+    Private Sub lstText_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lstText.SelectedIndexChanged
+        Dim selectedIndex As Integer
+        selectedIndex = lstText.SelectedIndex
+        TextBox1.Text = lstTranslation.Items.Item(selectedIndex)
     End Sub
 
     Private Shared Function GetFilePath() As String
@@ -23,6 +36,7 @@
     End Function
 
     Private Sub LoadListBoxes()
+
         Dim DICTIONARY_FILE As String = GetFilePath()
         Dim text As String
         Dim arySeperate() As String
@@ -30,10 +44,14 @@
         Dim term As String
         Dim def As String
 
+        lstTranslation.Items.Clear()
+        lstText.Items.Clear()
+
         Do While objReader.Peek() <> -1
             text = objReader.ReadLine()
             arySeperate = text.Split("=")
             term = arySeperate(0)
+            def = arySeperate(1)
 
             term = term.Trim
             def = def.Trim
@@ -42,5 +60,9 @@
             lstText.Items.Add(def)
         Loop
         objReader.Close()
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        LoadListBoxes()
     End Sub
 End Class
