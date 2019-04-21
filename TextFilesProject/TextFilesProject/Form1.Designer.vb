@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnRead = New System.Windows.Forms.Button()
-        Me.lstTest = New System.Windows.Forms.ListBox()
+        Me.lstText = New System.Windows.Forms.ListBox()
         Me.lstTranslation = New System.Windows.Forms.ListBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.txtDefinition = New System.Windows.Forms.TextBox()
@@ -33,43 +33,43 @@ Partial Class Form1
         '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(657, 693)
+        Me.btnAdd.Location = New System.Drawing.Point(646, 749)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(124, 60)
+        Me.btnAdd.Size = New System.Drawing.Size(182, 103)
         Me.btnAdd.TabIndex = 0
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
         'btnRead
         '
-        Me.btnRead.Location = New System.Drawing.Point(657, 53)
+        Me.btnRead.Location = New System.Drawing.Point(550, 66)
         Me.btnRead.Name = "btnRead"
-        Me.btnRead.Size = New System.Drawing.Size(178, 72)
+        Me.btnRead.Size = New System.Drawing.Size(391, 146)
         Me.btnRead.TabIndex = 1
         Me.btnRead.Text = "Read"
         Me.btnRead.UseVisualStyleBackColor = True
         '
-        'lstTest
+        'lstText
         '
-        Me.lstTest.FormattingEnabled = True
-        Me.lstTest.ItemHeight = 25
-        Me.lstTest.Location = New System.Drawing.Point(918, 165)
-        Me.lstTest.Name = "lstTest"
-        Me.lstTest.Size = New System.Drawing.Size(388, 404)
-        Me.lstTest.TabIndex = 2
+        Me.lstText.FormattingEnabled = True
+        Me.lstText.ItemHeight = 25
+        Me.lstText.Location = New System.Drawing.Point(1002, 25)
+        Me.lstText.Name = "lstText"
+        Me.lstText.Size = New System.Drawing.Size(449, 729)
+        Me.lstText.TabIndex = 2
         '
         'lstTranslation
         '
         Me.lstTranslation.FormattingEnabled = True
         Me.lstTranslation.ItemHeight = 25
-        Me.lstTranslation.Location = New System.Drawing.Point(216, 165)
+        Me.lstTranslation.Location = New System.Drawing.Point(12, 12)
         Me.lstTranslation.Name = "lstTranslation"
-        Me.lstTranslation.Size = New System.Drawing.Size(361, 404)
+        Me.lstTranslation.Size = New System.Drawing.Size(397, 729)
         Me.lstTranslation.TabIndex = 3
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(508, 615)
+        Me.TextBox1.Location = New System.Drawing.Point(522, 457)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(433, 31)
         Me.TextBox1.TabIndex = 4
@@ -97,7 +97,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtDefinition)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.lstTranslation)
-        Me.Controls.Add(Me.lstTest)
+        Me.Controls.Add(Me.lstText)
         Me.Controls.Add(Me.btnRead)
         Me.Controls.Add(Me.btnAdd)
         Me.Name = "Form1"
@@ -109,7 +109,7 @@ Partial Class Form1
 
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnRead As Button
-    Friend WithEvents lstTest As ListBox
+    Friend WithEvents lstText As ListBox
     Friend WithEvents lstTranslation As ListBox
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents txtDefinition As TextBox

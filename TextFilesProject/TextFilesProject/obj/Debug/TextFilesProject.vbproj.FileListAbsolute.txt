@@ -1,0 +1,12 @@
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\bin\Debug\TextFilesProject.exe.config
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\bin\Debug\TextFilesProject.exe
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\bin\Debug\TextFilesProject.pdb
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\bin\Debug\TextFilesProject.xml
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesProject.vbprojAssemblyReference.cache
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesApp.Form1.resources
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesApp.Resources.resources
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesProject.vbproj.GenerateResource.cache
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesProject.vbproj.CoreCompileInputs.cache
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesProject.exe
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesProject.xml
+C:\Users\ma52c\Google Drive\Coding\VisualBasic\TextFilesProject\TextFilesProject\TextFilesProject\obj\Debug\TextFilesProject.pdb
